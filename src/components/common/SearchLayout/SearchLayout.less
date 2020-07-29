@@ -1,0 +1,53 @@
+.searchLayout {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  overflow-x: auto;
+  min-width: 1000px;
+
+  .searchArea {
+    min-height: 80px;
+    background-color: #fff;
+
+    .searchConds {
+      padding: 20px;
+    }
+
+    .searchBtns {
+      margin-bottom: 24px;
+
+      .btnitems {
+        text-align: center;
+      }
+    }
+  }
+
+  .searchBody {
+    flex: 1;
+    background-color: #F4F6F9;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    .bodyHead {
+      height: 40px;
+      line-height: 40px;
+      color: #333;
+      font-size: 16px;
+    }
+
+    .bodyContent {
+      background-color: #fff;
+      flex: 1;
+      padding: 20px 20px 10px 20px;
+    }
+    .bodyContent1{
+      background-color: #fff;
+    }
+  }
+
+  :global(.ant-table-body) {
+    height: 2000px;
+  }
+}

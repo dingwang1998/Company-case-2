@@ -1,0 +1,321 @@
+:global {
+  .PublicTableTooltip {
+    .NowrapAndTitle {
+      // 不换行显示。。。
+      text-align: left;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+			white-space: nowrap;
+			max-width: 100%;
+    }
+  }
+
+  .ItemPublicTableTooltip {
+    .ant-tooltip-inner {
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    .ant-tooltip-arrow {
+      border-top-color: rgba(0,0,0,0.5);;
+    }
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .util-left,
+  .util-right {
+    display: inline;
+  }
+
+  .util-left {
+    float: left;
+  }
+
+  .util-right {
+    float: right;
+  }
+
+  /*
+   * 无额外标签的清楚浮动
+   */
+  .util-clearfix:after {
+    visibility: hidden;
+    display: block;
+    height: 0;
+    font-size: 0;
+    content: '\0020';
+    clear: both;
+  }
+
+  .util-clearfix {
+    zoom: 1;
+    /* for IE6 IE7 */
+  }
+
+  /*
+   * 容器内水平垂直居中
+   */
+  .util-valign {
+    display: table;
+    overflow: hidden;
+    height: 100%;
+    *position: relative;
+  }
+
+  .util-valign .util-valign-ctn {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    *position: absolute;
+    *top: 50%;
+    *left: 50%;
+  }
+
+  .util-valign .util-valign-inner {
+    *position: relative;
+    *top: -50%;
+    *left: -50%;
+  }
+
+  .align-justify {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+  }
+
+  .justify-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+  }
+
+  .flexible {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+  }
+
+  .flexible-start {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: start;
+  }
+
+  .col-1 {
+    flex: 1;
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+  }
+
+  .col-1::-webkit-input-placeholder {
+    font-size: 0.24rem;
+  }
+
+  .col-1::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    font-size: 0.24rem;
+  }
+
+  .col-1::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    font-size: 0.24rem;
+  }
+
+  .col-1:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    font-size: 0.24rem;
+  }
+
+  .ellipsis-one {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    -webkit-line-clamp: 1;
+    white-space: nowrap;
+    -webkit-box-orient: vertical;
+  }
+
+  .ellipsis-two {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .ellipsis-three {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .popper-high-zIndex {
+    z-index: 3000 !important;
+  }
+
+  .fit-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+
+  .input-clear-button .el-input__suffix {
+    transform: translateX(-60px);
+  }
+
+  @media screen and (min-width: 480px) {
+    .fit-container {
+      width: 480px;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    .fit-container {
+      width: 750px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .fit-container {
+      width: 992px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .fit-container {
+      width: 1200px;
+    }
+  }
+
+  .text-wrapper {
+    display: inline-block;
+    max-width: 100px;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .ysitem {
+    padding: 0;
+    padding-left: 10px;
+
+    li {
+      font-size: 14px;
+      line-height: 28px;
+      word-wrap: break-word;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+  }
+
+  .ant-tag {
+    .anticon.anticon-close {
+      color: #A0A2A8;
+    }
+  }
+
+  // 链接样式
+  .clickLink {
+    // text-decoration: underline;
+    border-bottom: 1px solid;
+
+    &:hover,
+    &:active,
+    &.active {
+      border-color: #428DF5;
+    }
+  }
+
+  // 修改提示信息在弹窗之下的问题
+  body .ant-message {
+    z-index: 10001;
+  }
+
+  // 确认框
+  .confirm-modal {
+    &.ant-modal.ant-modal-confirm .ant-modal-confirm-btns {
+      width: 88%;
+    }
+
+    .ant-btn:not(.ant-btn-primary) {
+      display: none;
+    }
+  }
+
+  /**表单必填项*/
+  .necessary {
+    margin-right: .2em;
+    font-style: normal;
+    color: red;
+  }
+
+  .tip-content {
+    background: #fff;
+    color: #666666;
+    max-width: 300px;
+  }
+
+  // 表格 有边框时表头居中显示
+  .ant-table-bordered {
+    .ant-table-header {
+      .ant-table-thead>tr>th {
+        text-align: center;
+      }
+    }
+  }
+
+  a.btn-link,
+  .icon-alink {
+    // display: inline-block;
+    color: #666666;
+
+    &:hover,
+    &:active,
+    &.active {
+      color: #428DF5;
+    }
+
+    &.disable {
+      color: #999999;
+      // cursor: not-allowed;
+      // pointer-events: none;
+    }
+
+    &.wait {
+      cursor: wait;
+    }
+  }
+
+}

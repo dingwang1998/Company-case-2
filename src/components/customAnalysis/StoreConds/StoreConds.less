@@ -1,0 +1,76 @@
+.cndItem {
+  :global {
+    .ant-list-item {
+      .ant-list-item-action {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+.cndCard {
+  width: 200px;
+  max-height: 500px;
+  line-height: 40px;
+
+  .name {
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .count {
+    text-align: right;
+    width: 33%;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .count:hover {
+    color: #40a9ff;
+  }
+
+}
+
+.hide {
+  display: none;
+}
+
+:global(.ant-list-item) {
+  padding: 2px 0;
+  line-height: 30px;
+}
+
+:global(.zcConfirm) {
+  :global(.ant-modal-confirm-body > .anticon) {
+    float: left;
+    margin-right: 12px;
+    margin-left: 31%;
+    margin-top: 6px;
+    font-size: 22px;
+  }
+}
+
+:global {
+  .storeCount {
+    color: #999999;
+    cursor: pointer;
+
+    .ant-badge-count {
+      width: 16px;
+      height: 14px;
+      font-size: 14px;
+      background: #f5222d;
+      transform: translate(50%, -50%) scale(0.9);
+      font-family: Tahoma !important;
+      border-radius: 50%;
+      min-width: 12px;
+      padding: 0;
+      line-height: 14px;
+    }
+  }
+}

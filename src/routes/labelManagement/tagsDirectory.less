@@ -1,0 +1,69 @@
+.tagsDirectoryBox {
+  padding: 0px 24px 24px;
+
+  .directoryTitle {
+    font-size: 16px;
+    color: #333333;
+    padding: 16px 0 12px;
+
+  }
+
+  .directoryContent {
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 20px;
+
+    .directoryTable {
+      margin-top: 16px;
+
+      :global {
+        .ant-table.ant-table-small.ant-table-bordered {
+          border-bottom: none 0;
+        }
+
+        .ant-table.ant-table-small.ant-table-bordered.ant-table-empty.ant-table-scroll-position-left {
+          border-bottom: 1px solid #D1D3D8 !important;
+        }
+
+        .ant-table-row-expand-icon {
+          border: none 0;
+          background: transparent !important;
+
+          &:after {
+            content: ' ';
+            display: inline-block;
+            border: 5px solid transparent;
+            border-left: 6px solid #D1D3D8;
+            transition: all 0.5s;
+          }
+
+          &.ant-table-row-expanded {
+            &:after {
+              border: 5px solid transparent;
+              border-top: 6px solid #D1D3D8;
+              transform: translateY(3px);
+            }
+          }
+        }
+      }
+
+      .optionBox {
+        &>span {
+          font-size: 14px;
+          color: #428DF5;
+          margin: 0 12px;
+          cursor: pointer;
+
+          &.disableBtn {
+            color: #ccc;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}
+
+.addLabel {
+  width: 100px;
+}

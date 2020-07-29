@@ -1,0 +1,75 @@
+.mxxzTable {
+  border: 1px solid #D1D3D8;
+
+  :global(.ant-table-small.ant-table-bordered) {
+    border: 0;
+
+    :global(.ant-table-content) {
+      border: 0;
+    }
+  }
+
+  :global(.ant-table-pagination.ant-pagination) {
+    margin-top: 6px;
+    margin-bottom: 10px;
+  }
+
+  :global(.ant-table-tbody > tr > td > span) {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+  }
+
+  :global(.ant-table-row-selected) {
+    background-color: #EAF4FF;
+  }
+
+  :global(.ant-table-row:hover) {
+    cursor: pointer;
+    background-color: #EAF4FF;
+  }
+
+  :global(.ant-table-selection-column) {
+    margin-top: 2px;
+  }
+}
+
+:global(.ant-table-thead > tr > th) {
+  background: #ececec;
+  border-bottom: 1px solid #d9d8d8;
+}
+
+:global(.ant-table-body) {
+  overflow: auto;
+}
+
+:global(.ant-tree li .ant-tree-node-content-wrapper) {
+  .node span {
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+  }
+
+  padding:0 !important;
+}
+
+// 表头样式-无边框
+.noheaderborder {
+  .ant-table {
+    border: 0;
+
+    .ant-table-thead {
+      th {
+        border: 0;
+      }
+    }
+  }
+}
+
+.noFootBorder {
+  .ant-modal-content .ant-modal-footer {
+    border-top: 0;
+  }
+}

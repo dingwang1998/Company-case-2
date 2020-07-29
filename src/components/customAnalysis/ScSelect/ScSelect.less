@@ -1,0 +1,192 @@
+.mxxzTable {
+  border: 1px solid #D1D3D8;
+
+  :global(.ant-table-small.ant-table-bordered) {
+    border: 0;
+
+    :global(.ant-table-content) {
+      border: 0;
+    }
+  }
+
+  :global(.ant-table-pagination.ant-pagination) {
+    margin-top: 6px;
+    margin-bottom: 10px;
+  }
+
+  :global(.ant-table-tbody > tr > td > span) {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+  }
+
+  :global(.ant-table-row-selected) {
+    background-color: #EAF4FF;
+  }
+
+  :global(.ant-table-row:hover) {
+    cursor: pointer;
+    background-color: #EAF4FF;
+  }
+
+  :global(.ant-table-selection-column) {
+    margin-top: 2px;
+  }
+}
+
+:global(.ant-table-thead > tr > th) {
+  background: #ececec;
+  border-bottom: 1px solid #d9d8d8;
+}
+
+:global(.ant-table-body) {
+  overflow: auto;
+}
+
+.MxLeft {
+  display: inline-block;
+  width: 25%;
+  height: 470px;
+  margin-top: 18px;
+  border: 1px solid #DFE1E6;
+  border-radius: 4px;
+  padding: 15px;
+  margin-right: 20px;
+
+  .MxLeftItem {
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 3px;
+
+    &:hover {
+      color: #428DF5;
+    }
+  }
+}
+
+.MxRight {
+  display: inline-block;
+  width: 73%;
+  height: 480px;
+  margin-top: 18px;
+  vertical-align: top;
+  text-align: center;
+}
+
+:global {
+  .pane {
+    margin: 5px 0;
+
+    &-header {
+      line-height: 30px;
+      text-align: left;
+      margin-bottom: 6px;
+
+      &-sorter {
+        float: right;
+        color: #999999;
+
+        .btn-link {
+          margin-left: 10px;
+          color: #333333;
+        }
+      }
+
+      &.lay-float {
+
+        &::before,
+        &::after {
+          display: table;
+          content: '';
+        }
+
+        &::after {
+          clear: both;
+        }
+      }
+    }
+  }
+
+  .detail-pane {
+    height: 480px;
+
+    &-header {
+      display: none;
+      text-align: left;
+      margin-left: 20px;
+      margin-right: 10px;
+      padding: 5px 0;
+
+      &.border {
+        border-bottom: 1px solid #DFE1E6;
+      }
+    }
+
+    &-btn {
+      margin-bottom: 5px;
+    }
+
+    &-content {
+      // padding-left: 20px;
+      padding-right: 10px;
+      padding-top: 10px;
+      text-align: left;
+      overflow: auto;
+
+      .item {
+        &-title {
+          height: 32px;
+          line-height: 32px;
+          vertical-align: middle;
+          font-size: 16px;
+        }
+
+        &-content {
+          padding-left: 14px;
+          margin: 0;
+          margin-bottom: 8px;
+
+          &-table {}
+        }
+
+        &-rect {
+          display: inline-block;
+          position: relative;
+          top: 3px;
+          width: 4px;
+          height: 16px;
+          background: #428DF5;
+          border-radius: 2px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  // 表头样式-无边框
+  .noheaderborder {
+    .ant-table {
+      border: 0;
+
+      .ant-table-thead {
+        th {
+          border: 0;
+        }
+      }
+    }
+  }
+
+  .noFootBorder {
+    .ant-modal-content .ant-modal-footer {
+      border-top: 0;
+    }
+  }
+
+  .closeModal,
+  .detailModal {
+    .ant-btn:not(.ant-btn-primary) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+.tableWrapper {
+  height: 100%;
+  overflow-y: hidden;
+  // overflow-x:auto;
+  min-width: 823px;
+  // padding: 0 20px;
+  // height: calc(~'100% - 47px');
+  background: #fff;
+  color: #000;
+  position: relative;
+  // top: 10px;
+  .pageTip {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    height: 26px;
+    line-height: 26px;
+  }
+  :global(.ant-table-empty .ant-table-body){
+    min-height: 100px;
+  }
+  :global(.ant-table .ant-table-content .ant-table-placeholder) {
+    top: 20%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
+  }
+}
+
+
+:global {
+   // 列宽度调整样式
+  .react-resizable {
+    position: relative;
+    .react-resizable-handle {
+      position: absolute;
+      width: 6px;
+      height: 100%;
+      bottom: 0;
+      right: -3px;
+      cursor: col-resize;
+
+      &:hover {
+        background: #bfbfbf;
+      }
+    }
+  }
+  // 最后一列距离右侧30px触发
+  .ant-table-scroll .ant-table-header .ant-table-thead > tr > th:last-child > .react-resizable-handle {
+    right: 30px;
+  }
+  .res {
+
+    // 文字一行行显示省略号
+    &-cell-ellipsis,
+    &-cell-ellipsis .ant-table-column-title {
+      word-wrap: break-word;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    // 文字两行显示省略号
+    &-cell-ellipsis-2 .ant-table-column-title {
+      text-overflow: ellipsis;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      /* autoprefixer: off */
+      -webkit-box-orient: vertical;
+      /* autoprefixer: on */
+    }
+
+    //基本信息列
+    &-base-column {
+      max-width: 140px;
+      .ant-table-column-title {
+        display: inline-block;
+        max-width: 120px;
+      }
+
+    }
+
+    // 元素、扩展信息列
+    &-ys-column {
+      max-width: 150px;
+      .ant-table-column-title {
+        display: inline-block;
+        max-width: 120px;
+      }
+
+    }
+
+    // 最后一行
+    &-last-row {
+      border-bottom: 1px solid #DFE1E6 !important;
+    }
+
+  }
+
+  .ant-table-bordered.ant-table-fixed-header .ant-table-scroll .ant-table-header.ant-table-hide-scrollbar .ant-table-thead>tr>th:last-child {
+    border-right: 1px solid #D1D3D8;
+  }
+  .wdSelect {
+    min-width: 200px;
+    max-width: 200px;
+  }
+  
+  
+  
+  /**命中背景色***/
+  .isHintBg {
+    background: #C2F8F9 !important;
+  }
+  
+  
+  // 分隔线
+  // .split-cell-r {
+  //   border-right: 1px solid #9297A1 !important;
+  // }
+
+  // 单元格格式化
+  .v-format{
+    display: block;
+    padding: 0 10px;
+  }
+}
+:global(.ant-table-bordered .ant-table-thead > tr:not(:last-child) > th ){
+  border-bottom: 1px solid #d1d3d8;
+}
+:global(.ant-table-small){
+  border: 1px solid #d1d3d8;
+}
+:global(.ant-table-bordered .ant-table-thead>tr>th){
+  border-right: 1px solid #d1d3d8;
+}
+:global(.ant-table-bordered .ant-table-tbody>tr>td){
+  border-right: 1px solid #d1d3d8;
+}
+:global(.ant-table-small.ant-table-bordered .ant-table-tbody > tr > td:last-child) {
+  border-right: 1px solid #d1d3d8;
+}

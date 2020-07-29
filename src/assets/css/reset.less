@@ -1,0 +1,101 @@
+@charset "utf-8";
+/*==================================全部页面样式重置，谨慎修改==========================================*/
+/* CSS Document */
+:global{
+	* {
+  word-break:break-all; /*支持IE，chrome，FF不支持*/
+  word-wrap:break-word;/*支持IE，chrome，FF*/
+}
+
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+  font-size:10px; /*设置页面跟路径的字体大小*/
+  height:100%;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family: "Microsoft YaHei","PingFangSC-Regular"," ArialMT","Adobe 黑体 Std R",sans-serif;
+  background-color:  #F0F2F5;
+  height:100%;
+  -webkit-text-size-adjust: 100% !important; /* 禁止微信调整字体大小 */
+  text-size-adjust: 100% !important;
+  -moz-text-size-adjust: 100% !important;
+  font-size:12px;
+}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0;
+   font-family:  "Microsoft YaHei","PingFangSC-Regular"," ArialMT","Adobe 黑体 Std R",sans-serif;  }
+h1, h2, h3, h4, h5, h6,svg { font-weight:normal;}
+address, caption, cite, code, dfn, em, strong, th, var ,i{ font-style:normal; font-weight:normal;}
+
+img { border:none;display:block;max-width: 100%; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button, option { outline:none; }
+textarea{resize:none;}
+table { border-collapse:collapse; }
+input{
+  -webkit-appearance:none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border:0;
+}
+
+::-webkit-input-placeholder{
+  color:#bfbfbf;
+}
+:-moz-placeholder{
+  color:#bfbfbf;
+}
+::-moz-placeholder{
+  color:#bfbfbf;
+}
+:-ms-input-placeholder{
+  color:#bfbfbf;
+}
+
+
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  min-height: 600px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+i {
+  font-style: normal;
+}
+h2 {
+  font-weight: normal;
+}
+
+
+
+textarea{
+  resize: none;
+}
+
+:focus {
+  outline: none;
+}
+
+}

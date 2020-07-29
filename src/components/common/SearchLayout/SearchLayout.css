@@ -1,0 +1,45 @@
+.searchLayout {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  overflow-x: auto;
+  min-width: 1000px;
+}
+.searchLayout .searchArea {
+  min-height: 80px;
+  background-color: #fff;
+}
+.searchLayout .searchArea .searchConds {
+  padding: 20px;
+}
+.searchLayout .searchArea .searchBtns {
+  margin-bottom: 24px;
+}
+.searchLayout .searchArea .searchBtns .btnitems {
+  text-align: center;
+}
+.searchLayout .searchBody {
+  flex: 1;
+  background-color: #F4F6F9;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.searchLayout .searchBody .bodyHead {
+  height: 40px;
+  line-height: 40px;
+  color: #333;
+  font-size: 16px;
+}
+.searchLayout .searchBody .bodyContent {
+  background-color: #fff;
+  flex: 1;
+  padding: 20px 20px 10px 20px;
+}
+.searchLayout .searchBody .bodyContent1 {
+  background-color: #fff;
+}
+.searchLayout :global(.ant-table-body) {
+  height: 2000px;
+}

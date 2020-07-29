@@ -1,0 +1,15 @@
+{
+    "extraBabelPlugins": [
+        ["import", {"libraryName": "antd", "libraryDirectory": "es", "style": "css"}]
+    ],
+    "theme": "./node_modules/servyou-sj-fe/lib/servyou-antd-theme.js",
+    "proxy": {
+        "/": {
+            "target": "http://rap2.taobao.org:38080/app/mock/246868",
+            "changeOrigin": true,
+						"pathRewrite": {
+          		"/tagfactory": "/"
+        }
+        }
+    }
+}

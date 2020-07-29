@@ -1,0 +1,148 @@
+.customAnalysis {
+  background-color: #F4F6F9;
+  height: 100%;
+  padding: 12px 24px;
+
+  .pageHead {
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+
+    h3 {
+      float: left;
+    }
+  }
+
+  .conds {
+    overflow: hidden;
+    transition: height 1s;
+    background-color: #fff;
+    padding: 0 16px;
+    border-radius: 3px 3px 0 0;
+
+    .conditionsLine {
+      min-height: 50px;
+      line-height: 50px;
+      font-size: 14px;
+      color: #333;
+
+      .formIcon {
+        margin-right: .2em;
+        font-style: normal;
+        color: #E84738;
+      }
+
+      .treeSelectStyle {
+        width: 220px;
+        overflow: hidden;
+        margin-left: 10px;
+        height: 32px;
+        vertical-align: middle;
+      }
+
+      .rqLine {
+        display: inline;
+
+        .toggleMore {
+          font-size: 20px;
+          margin-left: 10px;
+          vertical-align: middle;
+          transform: rotate(90deg);
+          color: #C4C6CC;
+
+          &:hover {
+            border-radius: 3px;
+            background: #E3E4E8;
+          }
+        }
+      }
+
+      .conLable2 {
+        float: left;
+        display: block;
+        margin-right: 25px;
+      }
+
+      .rqLine2 {
+        float: left;
+
+        :global(.ant-tag) {
+          cursor: default;
+        }
+      }
+
+      .setMore {
+        font-size: 20px;
+        margin-left: 10px;
+        vertical-align: middle;
+        line-height: 30px;
+      }
+
+    }
+
+    :global(.ant-divider-horizontal) {
+      margin: 0;
+    }
+  }
+
+  .condsBtns {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fff;
+  }
+
+  .hidenShowLine {
+    color: #999;
+    background-color: #fff;
+  }
+
+  .custTable {
+    transition: height .5s;
+    position: relative;
+    background-color: #fff;
+    border-radius: 0 0 3px 3px;
+    padding: 0 8px;
+
+    .custTableBtns {
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      z-index: 1;
+    }
+  }
+}
+
+.myRadion {
+  :global(.ant-radio-button-wrapper) {
+    width: 66px;
+    text-align: center;
+    padding: 0 5px;
+    border: none;
+    border-radius: 2
+  }
+
+  :global(.ant-radio-button-wrapper:first-child) {
+    border: none;
+    border-radius: 0;
+  }
+
+  :global(.ant-radio-button-wrapper:last-child) {
+    border: none;
+    border-radius: 0;
+  }
+
+  :global(.ant-radio-button-wrapper:not(:first-child)::before) {
+    display: none;
+  }
+
+  :global(.ant-radio-button-wrapper-checked span) {
+    color: #fff;
+  }
+
+  .left5 {
+    margin-left: 5px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+}

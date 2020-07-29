@@ -1,0 +1,34 @@
+
+.app{
+  height:100%;
+	.layout{
+		height:100%;
+		.header{
+			height: 50px;
+			background:#fff;
+			padding:0;
+		}
+		.sider{
+			height:100%;
+			background:#fff;
+			width:220px!important;
+			max-width:220px!important;
+			min-width:220px!important;
+			box-shadow: 2px 0 4px 0 rgba(0,0,0,0.05);			
+		}
+		.layoutBottom{
+			height:calc(100% - 50px);
+		}	
+		.routerWrap{
+			height:calc(~"100% - 47px");
+			overflow:hidden;
+			background:#F4F6F9;
+      &>div{
+        height: 100%;
+        overflow: auto;
+      }
+		}		
+	}
+}
+
+	
